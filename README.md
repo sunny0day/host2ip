@@ -4,7 +4,7 @@ Read hosts from standard input and look up their IP addresses.
 ## Example usage
 
 ```
-▶ cat hosts.txt | ./host2ip
+▶ cat hosts.txt | host2ip
 google.com	172.217.12.174
 google.com	2607:f8b0:4006:81a::200e
 bing.com	13.107.21.200
