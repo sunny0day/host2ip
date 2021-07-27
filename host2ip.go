@@ -1,10 +1,10 @@
 package main
 
 import (
-	"os"
 	"bufio"
 	"fmt"
 	"net"
+	"os"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 	for sc.Scan() {
 		host = sc.Text()
 
-		ips,err := net.LookupIP(host)
+		ips, err := net.LookupIP(host)
 
 		if err != nil {
 			continue
@@ -24,7 +24,7 @@ func main() {
 		for _, byte_ip := range ips {
 			var ip = byte_ip.String()
 
-			fmt.Println(host + "\t" +ip)
+			fmt.Println(host + " " + ip)
 		}
 	}
 }
